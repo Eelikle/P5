@@ -15,11 +15,12 @@
 <body>
     <header>
         <div class="overlay"></div>
-        <nav>
-            <h2>Orinico shop</h2>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="flowers.jpg">
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
                 <li class="cart">
                     <a href="cart.html">
                     <ion-icon name="basket"></ion-icon>Cart<span>0</span>
@@ -28,7 +29,52 @@
             </ul>
         </nav>
     </header>
+    <h3>Items in your cart</h3>
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">Product</h5>
+            <h5 class="price">Price</h5>
+            <h5 class="quantity">Quantity</h5>
+            <h5 class="total">Total</h5>
+        </div>
+         <div class="products" >
+        
+        </div>
+    </div>
+    
+    <div class="content">
+     <h3>Submit your order</h3>   
+   </div>
+<div class="contact-form">
+   <div class="text-form">
+       <label>Name</label>
+       <input type="text" name="name" id="name"  placeholder="Enter your name" required>
+   </div>
+   <div class="text-form">
+       <label>Surename</label>
+       <input type="text" name="surename"  id="surename"  placeholder="Enter your Surename" required>
+   </div>
+   <div class="text-form">
+       <label>Address</label>
+       <input type="text" name="address"  id="address" placeholder="House number and street" requierd>
+   </div>
+   <div class="text-form">
+       <label>City</label>
+       <input type="text" name="city" id="city" placeholder="City"required>
+   </div>
+   <div class="text-form">
+       <label>Email</label>
+       <input type="text" pattern=".+@.+\..+" id="email" name="email" id="email" value"" placeholder="name@gmail.com" requierd>
+   </div>
+   <a class="submit-btn" type="submit">Submit order</a>
+</div>
+
+
     <script src ="main.js"></script>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-</body>
+    <script src="index.js"></script>
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+     
+    
+
+    </body>
 </html>

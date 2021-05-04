@@ -22,7 +22,8 @@
             window.location.href = "item.html"  //replace # with the new page name like product.html
        }
 
-    
+
+
        // copy this code ito the new created missing page  ( single product page )0 // this api is called inside the single page that you need to create 
 
        // first  using query param   item.html?id= "5be9c8541c9d440000665243"

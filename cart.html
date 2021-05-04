@@ -30,7 +30,18 @@
         </nav>
     </header>
     <h3>Items in your cart</h3>
-    <div class="products-container">
+    <table>
+        <thead>
+            <td>Name</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Total</td>
+        </thead>
+        <tbody id="products">
+            <!-- we render he cart items here  -->
+        </tbody>
+    </table>
+    <!-- <div class="products-container">
         <div class="product-header">
             <h5 class="product-title">Product</h5>
             <h5 class="price">Price</h5>
@@ -38,14 +49,15 @@
             <h5 class="total">Total</h5>
         </div>
          <div class="products" >
-        
+           
         </div>
-    </div>
+    </div> -->
     
     <div class="content">
      <h3>Submit your order</h3>   
    </div>
-<div class="contact-form">
+   <form action = "#" name = "submitForm" onsubmit = "return(validate());" method="post">
+<!--<div class="contact-form">-->
    <div class="text-form">
        <label>Name</label>
        <input type="text" name="name" id="name"  placeholder="Enter your name" required>
@@ -56,7 +68,7 @@
    </div>
    <div class="text-form">
        <label>Address</label>
-       <input type="text" name="address"  id="address" placeholder="House number and street" requierd>
+       <input type="text" name="address"  id="address" placeholder="House number and street" required>
    </div>
    <div class="text-form">
        <label>City</label>
@@ -64,14 +76,14 @@
    </div>
    <div class="text-form">
        <label>Email</label>
-       <input type="text" pattern=".+@.+\..+" id="email" name="email" id="email" value"" placeholder="name@gmail.com" requierd>
+       <input type="text" pattern=".+@.+\..+" id="email" name="email"  placeholder="name@gmail.com" required>
    </div>
-   <a class="submit-btn" type="submit">Submit order</a>
+   <button class="submit-btn" type="submit">Submit order</button>
 </div>
-
+</form>
 
     <script src ="main.js"></script>
-    <script src="index.js"></script>
+    <script src="cart.js"></script>
    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
      
     

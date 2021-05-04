@@ -1,5 +1,5 @@
 
-
+/*
 let addToCartButton = document.querySelectorAll('.add-cart');
 
 //array has an object inside
@@ -132,4 +132,4 @@ const surename = document.getElementById('surename')
 const address = document.getElementById('address')
 const city = document.getElementById('city')
 const email = document.getElementById('email')
-
+*/

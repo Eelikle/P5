@@ -57,7 +57,7 @@ nav li {
 .image {
     width: 100%;
     max-width: 650px;
-    margin: 50px auto 0;
+    margin: 40px 40px 40px 40px;
     display: inline-block;
     position: relative;
     width: 300px;
@@ -70,6 +70,10 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    height: 200px;
+}
+#logoimage{
+   height: 100px;
 }
 
 .add-cart{
@@ -216,3 +220,12 @@ td {
 .dropdown {
     text-align: center;
 }
+.confirmation{
+    border: black solid 2px;
+    width: 50%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+}
+

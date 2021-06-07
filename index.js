@@ -17,4 +17,15 @@
             window.location.href = "item.html"  
        }
 
-    
+       (function calculatecart(){
+        let cart = JSON.parse(localStorage.getItem('productsCart'))
+
+        let cartcount = document.getElementById('cartNumber')
+        if(cart != null){
+            cartcount.innerText = cart.length ;
+            console.log(cart.length)
+        }else{
+            cartcount.innerText = 0
+        }
+        
+    })()
